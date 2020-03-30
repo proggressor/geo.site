@@ -1,0 +1,109 @@
+body {
+  font-family: Verdana, Trebuchet MS, Lucida Sans, sans-serif; /* Семейство шрифтов */
+  font-size: 11pt; /* Размер основного шрифта в пунктах  */
+  background: #ffffff url(https://i.imgur.com/foB8cNJ.png);
+  background-attachment: scroll;
+  color: #333; /* Цвет основного текста */
+}
+ h4 {
+  color: #40c781; /* Цвет заголовка */
+  font-size: 17pt; /* Размер шрифта в пунктах */
+  font-family: Georgia, Times, serif; /* Семейство шрифтов */
+  font-weight: normal; /* Нормальное начертание текста  */
+}
+p {
+  text-align: justify; /* Выравнивание по ширине */
+  margin-left: 60px; /* Отступ слева в пикселах */
+  margin-right: 60px; /* Отступ справа в пикселах */
+  border-left: 1px solid #999; /* Параметры линии слева */
+  border-bottom: 1px solid #999; /* Параметры линии снизу */
+  padding-left: 10px; /* Отступ от линии слева до текста  */
+  padding-bottom: 10px; /* Отступ от линии снизу до текста  */
+}
+table {
+width: 850; /* Ширина таблицы */
+background: white; /* Цвет фона таблицы */
+color: black; /* Цвет текста */
+border-spacing: 1px; /* Расстояние между ячейками */
+table-layout: fixed;
+}
+td, th {
+background: #40c781; /* Цвет фона ячеек */
+border-color: #40c781;
+border-style: solid;
+/*padding: 5px; /* Поля вокруг текста */
+}
+.bullet {
+margin-left: -2em;
+list-style: none;
+counter-reset: li;
+}
+.bullet li {
+position: relative;
+margin-bottom: 0.5em;
+width: 200px;
+margin-left: auto;
+margin-right: auto;
+border: 2px solid #40c781;
+padding: 0.45em;
+border-radius: 10px;
+background: #FEFEFE;
+color: #231F20;
+font-family: Trebuchet MS, Lucida Sans;
+}
+header{
+display: flex; 
+justify-content: flex-start;
+position: relative;
+left: 45%;
+top: 3em;
+float: none;
+}
+.header-left {
+position: relative;
+top: -0.4em;
+left: -40%;
+color: #40c781; /* Цвет заголовка */
+font-size: 30pt; /* Размер шрифта в пунктах */
+font-family: Georgia, Times, serif; /* Семейство шрифтов */
+font-weight: normal; /* Нормальное начертание текста  */
+/*float: left;*/
+}
+ul.hr {
+margin: 0; /* Обнуляем значение отступов */
+padding: 4px; /* Значение полей */
+}
+ul.hr li {
+display: inline; /* Отображать как строчный элемент */
+margin-right: 5px; /* Отступ слева */
+/*border: 1px solid #000; /* Рамка вокруг текста */
+padding: 3px; /* Поля вокруг текста */
+   }
+a.button {
+font-weight: 700;
+color: white;
+text-decoration: none;
+padding: .8em 1em calc(.8em + 3px);
+border-radius: 3px;
+background: #40c781;
+box-shadow: 0 -3px rgb(53,167,110) inset;
+transition: 0.2s;
+} 
+a.button:hover { background: rgb(53, 167, 110); }
+a.button:active {
+background: rgb(33,147,90);
+box-shadow: 0 3px rgb(33,147,90) inset;
+}
+#map {
+width: 800px;
+height: 600px;
+border: 1px solid black;
+margin: 0;
+padding: 0;
+background-color:#ccc;
+overflow:hidden;
+}
+.mapboxgl-popup {
+max-width: 400px;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
